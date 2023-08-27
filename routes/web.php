@@ -15,9 +15,7 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PostController::class, 'unkox']);
 
 
 Route::get('/posts', [PostController::class, 'unkox'])->name('undex');
